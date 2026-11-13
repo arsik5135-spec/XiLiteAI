@@ -1,0 +1,15 @@
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+xcshareddata/xcschemes/xcschememanagement.plist
+
+# Build artifacts
+DerivedData/
+build/
+*.xcresult
+
+# macOS cruft
+.DS_Store
+
+# Account records
+server/accounts.json

@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* XiLiteAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* XiLiteAIApp.swift */; };
+		B10000000000000000000001 /* XiLiteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* XiLiteWidget.swift */; };
+		B10000000000000000000002 /* XiLiteWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* XiLiteWidget.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C10000000000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000002 /* Assets.xcassets */; };
+		C10000000000000000000003 /* ios_system in Frameworks */ = {isa = PBXBuildFile; productRef = C10000000000000000000004 /* ios_system */; };
+		C10000000000000000000006 /* commandDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000007 /* commandDictionary.plist */; };
+		C10000000000000000000008 /* extraCommandsDictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000009 /* extraCommandsDictionary.plist */; };
+		C10000000000000000000010 /* PythonRuntime in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000011 /* PythonRuntime */; };
+		D10000000000000000000001 /* SwiftLlama in Frameworks */ = {isa = PBXBuildFile; productRef = D10000000000000000000002 /* SwiftLlama */; };
+		E10000000000000000000001 /* LocalModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000002 /* LocalModelLibrary.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000002 /* XiLiteAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiLiteAIApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* XiLiteAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiLiteAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000003 /* XiLiteWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XiLiteWidget.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10000000000000000000005 /* XiLiteWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XiLiteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10000000000000000000002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C10000000000000000000007 /* commandDictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = commandDictionary.plist; sourceTree = "<group>"; };
+		C10000000000000000000009 /* extraCommandsDictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = extraCommandsDictionary.plist; sourceTree = "<group>"; };
+		C10000000000000000000011 /* PythonRuntime */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PythonRuntime; sourceTree = "<group>"; };
+		E10000000000000000000002 /* LocalModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModelLibrary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000003 /* ios_system in Frameworks */,
+				D10000000000000000000001 /* SwiftLlama in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000006 /* XiLiteWidget Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000006 /* XiLiteAI */,
+				B10000000000000000000008 /* XiLiteWidget */,
+				A10000000000000000000007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000006 /* XiLiteAI */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000002 /* XiLiteAIApp.swift */,
+				E10000000000000000000002 /* LocalModelLibrary.swift */,
+				C10000000000000000000002 /* Assets.xcassets */,
+				C10000000000000000000007 /* commandDictionary.plist */,
+				C10000000000000000000009 /* extraCommandsDictionary.plist */,
+				C10000000000000000000011 /* PythonRuntime */,
+			);
+			path = XiLiteAI;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000008 /* XiLiteWidget */ = {isa = PBXGroup; children = (B10000000000000000000003 /* XiLiteWidget.swift */, B10000000000000000000004 /* Info.plist */, ); path = XiLiteWidget; sourceTree = "<group>"; };
+		A10000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000003 /* XiLiteAI.app */,
+				B10000000000000000000005 /* XiLiteWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000000000000000000008 /* XiLiteAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000009 /* Build configuration list for PBXNativeTarget "XiLiteAI" */;
+			buildPhases = (
+				A1000000000000000000000A /* Sources */,
+				A10000000000000000000004 /* Frameworks */,
+				A1000000000000000000000B /* Resources */,
+				B10000000000000000000007 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1000000000000000000000A /* XiLiteWidget dependency */,
+			);
+			packageProductDependencies = (
+				C10000000000000000000004 /* ios_system */,
+				D10000000000000000000002 /* SwiftLlama */,
+			);
+			name = XiLiteAI;
+			productName = XiLiteAI;
+			productReference = A10000000000000000000003 /* XiLiteAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B10000000000000000000009 /* XiLiteWidget */ = {isa = PBXNativeTarget; buildConfigurationList = B1000000000000000000000F /* Build configuration list for PBXNativeTarget "XiLiteWidget" */; buildPhases = (B1000000000000000000000C /* XiLiteWidget Sources */, B10000000000000000000006 /* XiLiteWidget Frameworks */, B1000000000000000000000B /* XiLiteWidget Resources */, ); buildRules = (); dependencies = (); name = XiLiteWidget; productName = XiLiteWidget; productReference = B10000000000000000000005 /* XiLiteWidget.appex */; productType = "com.apple.product-type.app-extension"; };
+		B1000000000000000000000A /* XiLiteWidget dependency */ = {isa = PBXTargetDependency; target = B10000000000000000000009 /* XiLiteWidget */; targetProxy = B10000000000000000000010 /* XiLiteWidget proxy */; };
+		B10000000000000000000010 /* XiLiteWidget proxy */ = {isa = PBXContainerItemProxy; containerPortal = A1000000000000000000000C /* Project object */; proxyType = 1; remoteGlobalIDString = B10000000000000000000009; remoteInfo = XiLiteWidget; };
+		C10000000000000000000005 /* XCLocalSwiftPackageReference "XiLiteTerminalRuntime" */ = {isa = XCLocalSwiftPackageReference; relativePath = XiLiteTerminalRuntime; };
+		C10000000000000000000004 /* XiLiteTerminalRuntime */ = {isa = XCSwiftPackageProductDependency; package = C10000000000000000000005 /* XCLocalSwiftPackageReference "XiLiteTerminalRuntime" */; productName = XiLiteTerminalRuntime; };
+		D10000000000000000000002 /* SwiftLlama */ = {isa = XCSwiftPackageProductDependency; package = D10000000000000000000003 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */; productName = SwiftLlama; };
+/* End PBXNativeTarget section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D10000000000000000000003 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */ = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/pgorzelany/swift-llama-cpp"; requirement = {kind = revision; revision = d2750c52f5310596fede783ad1122c66cbd30855; }; };
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin PBXProject section */
+		A1000000000000000000000C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A10000000000000000000008 = {
+						CreatedOnToolsVersion = 16.0;
+						SystemCapabilities = { com.apple.ApplicationGroups.iOS = { enabled = 1; }; };
+					};
+					B10000000000000000000009 = { CreatedOnToolsVersion = 16.0; SystemCapabilities = { com.apple.ApplicationGroups.iOS = { enabled = 1; }; }; };
+				};
+			};
+			buildConfigurationList = A1000000000000000000000D /* Build configuration list for PBXProject "XiLiteAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000000000005;
+			productRefGroup = A10000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000000000000000000008 /* XiLiteAI */,
+				B10000000000000000000009 /* XiLiteWidget */,
+			);
+			packageReferences = (
+				C10000000000000000000005 /* XCRemoteSwiftPackageReference "ios_system" */,
+				D10000000000000000000003 /* XCRemoteSwiftPackageReference "swift-llama-cpp" */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000000000000000000000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10000000000000000000001 /* Assets.xcassets in Resources */,
+				C10000000000000000000006 /* commandDictionary.plist in Resources */,
+				C10000000000000000000008 /* extraCommandsDictionary.plist in Resources */,
+				C10000000000000000000010 /* PythonRuntime in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1000000000000000000000B /* XiLiteWidget Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000000000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* XiLiteAIApp.swift in Sources */,
+				E10000000000000000000001 /* LocalModelLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1000000000000000000000C /* XiLiteWidget Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B10000000000000000000001 /* XiLiteWidget.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		B10000000000000000000007 /* Embed App Extensions */ = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 13; files = (B10000000000000000000002 /* XiLiteWidget.appex in Embed App Extensions */, ); name = "Embed App Extensions"; runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A10000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = XiLiteAI/XiLiteAI.entitlements;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGP2L9N7CN;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XiLiteAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0b1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilite.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = XiLiteAI/XiLiteAI.entitlements;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGP2L9N7CN;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XiLiteAI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0b1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xilite.ai;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1000000000000000000000D /* XiLiteWidget Debug */ = {isa = XCBuildConfiguration; buildSettings = { APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = XiLiteWidget/XiLiteWidget.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = RGP2L9N7CN; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = XiLiteWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0b1; PRODUCT_BUNDLE_IDENTIFIER = com.xilite.ai.widget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		B1000000000000000000000E /* XiLiteWidget Release */ = {isa = XCBuildConfiguration; buildSettings = { APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = XiLiteWidget/XiLiteWidget.entitlements; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = RGP2L9N7CN; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = XiLiteWidget/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0b1; PRODUCT_BUNDLE_IDENTIFIER = com.xilite.ai.widget; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000009 /* Build configuration list for PBXNativeTarget "XiLiteAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000010 /* Debug */,
+				A10000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000000D /* Build configuration list for PBXProject "XiLiteAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000000000000000000000E /* Debug */,
+				A1000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1000000000000000000000F /* Build configuration list for PBXNativeTarget "XiLiteWidget" */ = {isa = XCConfigurationList; buildConfigurations = (B1000000000000000000000D /* Debug */, B1000000000000000000000E /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000000000000000000000C /* Project object */;
+}

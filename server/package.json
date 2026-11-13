@@ -1,0 +1,10 @@
+{
+  "name": "xi-lite-account-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local account and Pro entitlement server for Xi Lite",
+  "scripts": {
+    "start": "node server.js",
+    "premium": "node admin.js"
+  }
+}
