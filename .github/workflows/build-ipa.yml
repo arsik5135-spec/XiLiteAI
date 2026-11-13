@@ -1,0 +1,54 @@
+name: Build unsigned IPA
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "xiliteai.ipa"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve Swift packages
+        run: |
+          xcodebuild -project XiLiteAI.xcodeproj -scheme XiLiteAI -resolvePackageDependencies
+
+      - name: Build unsigned (iphoneos, Release)
+        run: |
+          set -euo pipefail
+          xcodebuild -project XiLiteAI.xcodeproj -scheme XiLiteAI -configuration Release -sdk iphoneos -derivedDataPath build/xdd build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
+
+      - name: Package unsigned IPA
+        run: |
+          set -euo pipefail
+          rm -rf build/ipa
+          mkdir -p build/ipa/Payload
+          cp -R build/xdd/Build/Products/Release-iphoneos/XiLiteAI.app build/ipa/Payload/
+          (cd build/ipa && zip -qry ../../xiliteai.ipa Payload)
+          ls -lh xiliteai.ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: xiliteai-unsigned-ipa
+          path: xiliteai.ipa
+
+      - name: Commit IPA to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add xiliteai.ipa
+          if git diff --cached --quiet; then
+            echo "IPA unchanged"
+          else
+            git commit -m "Update unsigned xiliteai.ipa [skip ci]"
+            git push
+          fi
